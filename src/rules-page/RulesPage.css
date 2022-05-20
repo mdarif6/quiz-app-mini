@@ -1,0 +1,13 @@
+.sm-rule-content {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.sm-rules-heading {
+  font-weight: bold;
+}
+.unorderd-list li {
+  padding: 1rem;
+}
