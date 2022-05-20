@@ -1,0 +1,8 @@
+.blank-div {
+  border: 1px solid black;
+  margin: 1rem;
+}
+.sm-result-status {
+  text-align: center;
+  padding-top: 1rem;
+}

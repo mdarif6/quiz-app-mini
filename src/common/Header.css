@@ -1,0 +1,27 @@
+.sm-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 0 1rem;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.sm-header div:last-child {
+  margin-left: auto;
+}
+.sm-logo-and-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sm-heading span {
+  color: blue;
+  font-weight: bold;
+}
+.sm-logo img {
+  width: 70px;
+  height: 70px;
+}
+.sm-header-icons i {
+  font-size: 2rem;
+  cursor: pointer;
+}
