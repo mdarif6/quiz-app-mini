@@ -38,7 +38,7 @@ export default function ScoreMain() {
 
         {state.quizData1.map((quizQuestion) => {
           return (
-            <div className="sm-question-details">
+            <div className="sm-question-details" key={quizQuestion.questionSN}>
               <div className="sm-question">
                 <p>Question: {quizQuestion.questionSN}</p>
                 <p>{quizQuestion.questionHeading}</p>
