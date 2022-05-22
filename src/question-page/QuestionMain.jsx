@@ -15,7 +15,7 @@ export default function QuestionMain() {
       setCurrentQuestion(currentQuestion + 1);
     }
   }
-
+  console.log(state.quizData1.length - 1, currentQuestion);
   return (
     <div className="sm-question-main">
       <div className="sm-question-details">
@@ -34,16 +34,19 @@ export default function QuestionMain() {
             );
           })}
 
-          <button
-            disabled={!state.quizData1[currentQuestion].isClicked}
-            className="sm-next-btn"
-            onClick={nextClickHandler}
-          >
-            Next
-          </button>
-          <Link to="/score">
-            <button className="sm-result-btn">Result</button>
-          </Link>
+          {state.quizData1.length - 1 === currentQuestion ? (
+            <Link to="/score">
+              <button className="sm-result-btn">Result</button>
+            </Link>
+          ) : (
+            <button
+              disabled={!state.quizData1[currentQuestion].isClicked}
+              className="sm-next-btn"
+              onClick={nextClickHandler}
+            >
+              Next
+            </button>
+          )}
         </div>
       </div>
     </div>

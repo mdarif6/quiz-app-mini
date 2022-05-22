@@ -2,7 +2,15 @@ import React from "react";
 import "./Header.css";
 import logo from "../assets/images/logo1.PNG";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/auth-context";
 export default function Header() {
+  const { state, dispatch } = useAuth();
+
+  function logoutHandler() {
+    localStorage.removeItem("authToken");
+    dispatch({ type: "SET_AUTH", payload: false });
+  }
+
   return (
     <div className="sm-header">
       <div className="sm-logo-and-heading">
@@ -16,9 +24,16 @@ export default function Header() {
         </div>
       </div>
       <div className="sm-header-icons">
-        <Link to="/login">
-          <i class="fa-solid fa-user"></i>
-        </Link>
+        {state.isAuthenticated ? (
+          <i
+            className="fa-solid fa-right-from-bracket"
+            onClick={logoutHandler}
+          ></i>
+        ) : (
+          <Link to="/login">
+            <i className="fa-solid fa-user"></i>
+          </Link>
+        )}
       </div>
     </div>
   );
