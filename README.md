@@ -3,14 +3,14 @@
 ![Logo](/src/assets/images/logo1.PNG)
 
   <h1>Simple Mind</h1>
-    <p>Do you know IT Basics? <a href="https://bakin-mania.netlify.app/">Simple Mind</a> is for you! Its a  Quiz App which tests your knowledge on IT basics and OS 365.</p>
+    <p>Do you know IT Basics? <a href="https://sm-quiz.netlify.app/">Simple Mind</a> is for you! It is a Quiz App by which you can test your knowledge on IT basics and OS 365.</p>
  </div>
 
 ## How to run the app locally?
 
 ```
-$ git https://github.com/romabulani/bakinMania-react.git
-$ cd bakinMania-react
+$ git https://github.com/mdarif6/quiz-app-mini/.git
+$ cd quiz-app-mini
 $ npm install
 $ npm start
 ```
@@ -22,7 +22,6 @@ $ npm start
 - Authentication (Login, Signup and Logout) Pages
 - MCQ based Question Page
 - Result Page with Answers & Score
-- 404 (Not Found) Page (need to add)
 
 ## Features
 
@@ -39,14 +38,12 @@ $ npm start
 - React JS
 - React Router v6
 - React Context API + useReducer
-- Vanilla CSS integrated with [Muffin UI](https://muffinui.netlify.app/) Component Library
-- Git For Version Control
+- Vanilla CSS integrated with [Panda UI](https://pandaui.netlify.app/) Component Library
+<!-- - Git For Version Control -->
 - Netlify for Deployment
 
 ## Live Link
 
-[Bakin Mania](https://bakin-mania.netlify.app/)
+[Bakin Mania](https://sm-quiz.netlify.app/)
 
 ## Demo Video
-
-https://user-images.githubusercontent.com/42478246/165312993-1c10d758-f529-40ab-a2fe-53dd4e56a0c3.mp4
