@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](/src/assets/images/logo1.PNG)
 
-## Available Scripts
+  <h1>Simple Mind</h1>
+    <p>Do you know IT Basics? <a href="https://bakin-mania.netlify.app/">Simple Mind</a> is for you! Its a  Quiz App which tests your knowledge on IT basics and OS 365.</p>
+ </div>
 
-In the project directory, you can run:
+## How to run the app locally?
 
-### `yarn start`
+```
+$ git https://github.com/romabulani/bakinMania-react.git
+$ cd bakinMania-react
+$ npm install
+$ npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Screens in this project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Landing Page
+- Rules Page
+- Authentication (Login, Signup and Logout) Pages
+- MCQ based Question Page
+- Result Page with Answers & Score
+- 404 (Not Found) Page (need to add)
 
-### `yarn test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Authentication including Login, Signup and Logout. All the authentication forms have the proper validation.
+- Landing Page with only one Quiz Category.
+- Rules page displaying the rules for the Quiz
+- Question Page with four options.
+- User cannot go back to Previous Question.
+- Results page displaying the correct answers, answers chosen by user and the score for that quiz.
+- All the screens are Responsive.
 
-### `yarn build`
+## Tech Stack and Tools
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React JS
+- React Router v6
+- React Context API + useReducer
+- Vanilla CSS integrated with [Muffin UI](https://muffinui.netlify.app/) Component Library
+- Git For Version Control
+- Netlify for Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Bakin Mania](https://bakin-mania.netlify.app/)
 
-### `yarn eject`
+## Demo Video
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://user-images.githubusercontent.com/42478246/165312993-1c10d758-f529-40ab-a2fe-53dd4e56a0c3.mp4

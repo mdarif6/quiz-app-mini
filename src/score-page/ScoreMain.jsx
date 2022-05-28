@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useQuiz } from "../context/quiz-context";
 import "./ScorePage.css";
 export default function ScoreMain() {
@@ -30,8 +31,13 @@ export default function ScoreMain() {
       <div className="sm-question-main">
         <div className="sm-question-details">
           <div className="sm-result-status">
-            <div className="sm-result-heading">Result </div>
-            <div className="sm-score-status">Your Score is-{scoreOfQuiz}</div>
+            <div className="sm-result-heading"> </div>
+            <div className="sm-score-status">
+              Your Score :
+              <p style={{ color: "green", fontSize: "1.5rem" }}>
+                {scoreOfQuiz}
+              </p>
+            </div>
             <div className="blank-div"></div>
           </div>
         </div>
@@ -61,6 +67,9 @@ export default function ScoreMain() {
           );
         })}
       </div>
+      <Link className="link-style" to="/">
+        <button className="sm-back-btn">Try Again</button>
+      </Link>
     </div>
   );
 }

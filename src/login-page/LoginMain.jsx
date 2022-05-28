@@ -12,8 +12,6 @@ export default function LoginMain() {
 
   async function submitHandler(e) {
     e.preventDefault();
-    console.log("clik");
-    console.log(email, password);
 
     try {
       const response = await axios.post("api/auth/login", {
@@ -37,7 +35,6 @@ export default function LoginMain() {
         email: "adarshbalika@gmail.com",
         password: "adarshBalika123",
       });
-      console.log(response);
 
       if (response.status === 200 || response.status === 201) {
         localStorage.setItem("authToken", response.data.encodedToken);
@@ -80,7 +77,7 @@ export default function LoginMain() {
                   id="consent"
                   value="remember"
                 />
-                <label for="consent">Remember me</label>
+                <label htmlFor="consent">Remember me</label>
               </div>
               <div>
                 <a href="#">Forgot Your Password ?</a>

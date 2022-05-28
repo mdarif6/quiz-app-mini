@@ -15,7 +15,7 @@ export default function QuestionMain() {
       setCurrentQuestion(currentQuestion + 1);
     }
   }
-  console.log(state.quizData1.length - 1, currentQuestion);
+
   return (
     <div className="sm-question-main">
       <div className="sm-question-details">
