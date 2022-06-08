@@ -14,7 +14,7 @@ export default function SignupMain() {
 
     try {
       const response = await axios.post("/api/auth/signup", register);
-      console.log("response arif", response);
+
       if (response.status === 200 || response.status === 201) {
         localStorage.setItem("authToken", response.data.encodedToken);
         navigate("/");

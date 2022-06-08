@@ -23,7 +23,7 @@ export default function HomeMain() {
             </div>
           </div>
         </div>
-        <div className="sm-categ-card">
+        {/* <div className="sm-categ-card">
           <div className="sm-card-img">
             <img src={imgsilicon} alt="" />
           </div>
@@ -37,7 +37,7 @@ export default function HomeMain() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
