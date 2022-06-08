@@ -3,7 +3,7 @@
 ![Logo](/src/assets/images/logo1.PNG)
 
   <h1>Simple Mind</h1>
-    <p>Do you know IT Basics? <a href="https://sm-quiz.netlify.app/">Simple Mind</a> is for you! It is a Quiz App by which you can test your knowledge on IT basics and OS 365.</p>
+    <p>Do you know IT Fundamentals? <a href="https://sm-quiz.netlify.app/">Simple Mind</a> is for you! It is a Quiz App by which you can test your knowledge on IT basics and OS 365.</p>
  </div>
 
 ## How to run the app locally?
@@ -25,10 +25,10 @@ $ npm start
 
 ## Features
 
-- Authentication including Login, Signup and Logout. All the authentication forms have the proper validation.
+- Authentication including Login, Signup and Logout.
 - Landing Page with only one Quiz Category.
 - Rules page displaying the rules for the Quiz
-- Question Page with four options.
+- Question Page with four options for each question.
 - User cannot go back to Previous Question.
 - Results page displaying the correct answers, answers chosen by user and the score for that quiz.
 - All the screens are Responsive.
@@ -44,6 +44,12 @@ $ npm start
 
 ## Live Link
 
-[Bakin Mania](https://sm-quiz.netlify.app/)
+[Simple Mind](https://sm-quiz.netlify.app/)
 
-## Demo Video
+## Screen Shots
+
+![Screenshot](/src/assets/images/screenshot1.JPG)
+
+![Screenshot](/src/assets/images/screenshot2.JPG)
+
+![Screenshot](/src/assets/images/screenshot3.JPG)
