@@ -8,10 +8,14 @@ import ScorePage from "./score-page/ScorePage";
 import { Route, Routes } from "react-router-dom";
 import PrivateRoute from "./common/PrivateRoute";
 import PageNotFound from "./page-not-found/PageNotFound";
+import Layout from "./layout/Layout";
+import Footer from "./common/Footer";
+import Header from "./common/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
@@ -42,6 +46,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
