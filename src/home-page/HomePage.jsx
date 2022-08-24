@@ -5,7 +5,7 @@ import HomeMain from "./HomeMain";
 
 export default function HomePage() {
   return (
-    <div className="">
+    <div className="sm-quiz">
       <Header />
       <HomeMain />
       <Footer />

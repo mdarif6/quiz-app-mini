@@ -7,6 +7,7 @@ import SignupPage from "./signup-page/SignupPage";
 import ScorePage from "./score-page/ScorePage";
 import { Route, Routes } from "react-router-dom";
 import PrivateRoute from "./common/PrivateRoute";
+import PageNotFound from "./page-not-found/PageNotFound";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );

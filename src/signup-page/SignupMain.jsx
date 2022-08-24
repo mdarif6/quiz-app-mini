@@ -5,7 +5,11 @@ import { useState } from "react";
 import { useAuth } from "../context/auth-context";
 import "./SignupPage.css";
 export default function SignupMain() {
-  const [register, setRegister] = useState({ email: "", password: "" });
+  const [register, setRegister] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
   const { dispatch } = useAuth();
   const navigate = useNavigate();
 
@@ -32,33 +36,63 @@ export default function SignupMain() {
           <h2>Signup</h2>
           <form action="inputs" onSubmit={formSubmitHandler}>
             <div className="sm-input-text">
+              <label>Name</label>
+              <input
+                type="text"
+                placeholder="Type your name"
+                onChange={(e) =>
+                  setRegister((prevState) => {
+                    return { ...prevState, name: e.target.value };
+                  })
+                }
+              />
+            </div>
+
+            <div className="sm-input-text">
               <label>Email address</label>
-              <input type="text" placeholder="xyz@email.com" />
+              <input
+                type="text"
+                placeholder="xyz@email.com"
+                onChange={(e) =>
+                  setRegister((prevState) => {
+                    return { ...prevState, email: e.target.value };
+                  })
+                }
+              />
             </div>
 
             <div className="sm-input-text">
               <label>Password</label>
-              <input type="password" placeholder="***************" />
+              <input
+                type="password"
+                placeholder="***************"
+                onChange={(e) =>
+                  setRegister((prevState) => {
+                    return { ...prevState, password: e.target.value };
+                  })
+                }
+              />
             </div>
-            <div className="login-check">
-              {/* <div className="login-check-label">
-                <input
-                  type="checkbox"
-                  name="consent"
-                  id="consent"
-                  value="remember"
-                />
-                <label for="consent">Remember me</label>
-              </div> */}
-            </div>
+            <div className="login-check"></div>
             <a href="#">
-              <button className="btn btn-primary">
-                I accept all terms and condition
+              <button
+                className={
+                  register.email.length > 0 && register.password.length > 0
+                    ? "btn btn-primary"
+                    : "btn btn-primary disabled-btn"
+                }
+                disabled={
+                  register.email.length > 0 && register.password.length > 0
+                    ? false
+                    : true
+                }
+              >
+                Create New Account
               </button>
             </a>
 
             <div className="login-bottom-text">
-              <Link to="login">
+              <Link className="link-style" to="/login">
                 Already have an Account <i className="fas fa-chevron-right"></i>
               </Link>
             </div>

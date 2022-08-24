@@ -14,7 +14,7 @@
   gap: 1rem;
 }
 .sm-heading span {
-  color: blue;
+  color: var(--quiz-heading-color);
   font-weight: bold;
 }
 .sm-logo img {

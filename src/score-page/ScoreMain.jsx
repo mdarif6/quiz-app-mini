@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useQuiz } from "../context/quiz-context";
 import "./ScorePage.css";
@@ -24,6 +24,11 @@ export default function ScoreMain() {
     } else if (option.isCorrect) {
       return { backgroundColor: "green" };
     }
+  }
+
+  function tryAgainHandle() {
+    dispatch({ type: "RESET" });
+    window.location = "/";
   }
 
   return (
@@ -68,7 +73,9 @@ export default function ScoreMain() {
         })}
       </div>
       <Link className="link-style" to="/">
-        <button className="sm-back-btn">Try Again</button>
+        <button className="sm-back-btn" onClick={tryAgainHandle}>
+          Try Again
+        </button>
       </Link>
     </div>
   );

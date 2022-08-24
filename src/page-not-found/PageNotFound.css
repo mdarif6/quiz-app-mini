@@ -1,0 +1,24 @@
+.quiz-error-page {
+  margin: 4rem;
+  text-align: center;
+}
+.quiz-error-page img {
+  width: 600px;
+}
+.quiz-error-msg {
+  text-align: center;
+}
+.main-heading {
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.main-heading span {
+  color: var(--quiz-heading-color);
+}
+
+@media only screen and (max-width: 800px) {
+  .quiz-error-page img {
+    max-width: 300px;
+  }
+}

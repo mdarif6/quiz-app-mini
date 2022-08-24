@@ -69,22 +69,18 @@ export default function LoginMain() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="login-check">
-              <div className="login-check-label">
-                <input
-                  type="checkbox"
-                  name="consent"
-                  id="consent"
-                  value="remember"
-                />
-                <label htmlFor="consent">Remember me</label>
-              </div>
-              <div>
-                <a href="#">Forgot Your Password ?</a>
-              </div>
-            </div>
+
             <a href="#">
-              <button className="btn btn-primary">Login</button>
+              <button
+                className={
+                  email.length > 0 && password.length
+                    ? "btn btn-primary"
+                    : "btn btn-primary disabled-btn"
+                }
+                disabled={email.length > 0 && password.length ? false : true}
+              >
+                Login
+              </button>
             </a>
             <a href="#">
               <button className="btn outline-primary" onClick={loginAsGuest}>
@@ -92,7 +88,7 @@ export default function LoginMain() {
               </button>
             </a>
             <div className="login-bottom-text">
-              <Link to="/signup">
+              <Link className="link-style" to="/signup">
                 Create New Account <i className="fas fa-chevron-right"></i>
               </Link>
             </div>

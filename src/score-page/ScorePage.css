@@ -1,5 +1,5 @@
 .blank-div {
-  border: 1px solid black;
+  border: 1px solid var(--quiz-black-color);
   margin: 1rem;
 }
 .sm-result-status {
@@ -11,14 +11,14 @@
   border-radius: 10px;
   padding: 1rem 2rem;
   margin-left: auto;
-  background-color: gray;
-  color: white;
+  background-color: var(--quiz-gray-color);
+  color: var(--quiz-white-color);
   display: flex;
 }
 
 .sm-back-btn:hover {
-  background-color: white;
-  color: gray;
+  background-color: var(--quiz-white-color);
+  color: var(--quiz-gray-color);
 }
 .link-style {
   text-decoration: none;

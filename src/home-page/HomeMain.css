@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html,
+:root {
+  --quiz-primary-color: #7c3aed;
+  --quiz-background-color: #e2e2cb;
+  --quiz-heading-color: #0000ff;
+  --quiz-main-background-color: #f8f6f6;
+  --quiz-white-color: #ffffff;
+  --quiz-black-color: #000000;
+  --quiz-gray-color: #808080;
+  --quiz-logo-color: #8a2be2;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sm-quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sm-main {
+  padding: 3rem 0;
+}
 .sm-categories {
   padding: 2rem;
   display: flex;
@@ -10,24 +35,24 @@
   border-top-right-radius: 10px;
 }
 .sm-categ-card {
-  background-color: black;
+  background-color: var(--quiz-black-color);
   border-radius: 10px;
 }
 .sm-card-details {
-  color: white;
+  color: var(--quiz-white-color);
   padding: 1rem 1rem 0 1rem;
 }
 
 .sm-card-button button {
-  color: black;
-  background-color: rgb(226, 226, 203);
+  color: var(--quiz-black-color);
+  background-color: var(--quiz-background-color);
   margin: 1rem 0 0 0;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .sm-card-button button:hover {
-  background-color: gray;
+  background-color: var(--quiz-gray-color);
 }
 
 @media only screen and (max-width: 800px) {
@@ -37,5 +62,8 @@
   }
   .sm-categories {
     padding: 0;
+  }
+  .sm-main {
+    padding: 8.5rem 0;
   }
 }

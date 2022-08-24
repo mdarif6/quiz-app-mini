@@ -1,16 +1,11 @@
 .v-footer {
-  /* position: absolute; */
-  /* bottom: 0px; */
-  /* width: 100%; */
-  background-color: gray;
-  color: white;
-
+  background-color: var(--quiz-gray-color);
+  color: var(--quiz-white-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.3rem 0;
-  margin-top: 1rem;
+  padding: 0.5rem 0;
 }
 
 .ha-footer-icons {
@@ -21,5 +16,5 @@
 
 .social-icon i {
   font-size: x-large;
-  color: white;
+  color: var(--quiz-white-color);
 }

@@ -1,11 +1,11 @@
 .sm-question-main {
   flex-grow: 1;
+  padding: 2.42rem 0 4rem 0;
 }
 .sm-question-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid green; */
 }
 .sm-question {
   width: 40%;
@@ -21,18 +21,17 @@
   width: 40%;
 }
 .sm-option-label {
-  border: 1px solid gray;
+  border: 1px solid var(--quiz-gray-color);
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
   display: inline-flex;
   height: fit-content;
-  /* padding: 1rem; */
   width: auto;
 }
 .sm-option-label:hover {
-  color: white;
-  background-color: gray;
+  color: var(--quiz-white-color);
+  background-color: var(--quiz-gray-color);
 }
 .sm-option-label input {
   width: auto;
@@ -46,24 +45,41 @@
   border-radius: 10px;
   padding: 1rem 2rem;
   margin-left: auto;
-  background-color: gray;
-  color: white;
+  background-color: var(--quiz-gray-color);
+  color: var(--quiz-white-color);
 }
 .sm-next-btn:hover {
-  background-color: white;
-  color: gray;
+  background-color: var(--quiz-white-color);
+  color: var(--quiz-gray-color);
 }
 
 .sm-result-btn {
   cursor: pointer;
-
+  display: flex;
   border-radius: 10px;
   padding: 1rem 2rem;
   margin-left: auto;
-  background-color: gray;
-  color: white;
+  background-color: var(--quiz-gray-color);
+  color: var(--quiz-white-color);
 }
+
 .sm-result-btn:hover {
-  background-color: white;
-  color: gray;
+  background-color: var(--quiz-white-color);
+  color: var(--quiz-gray-color);
+}
+.disabled-btn {
+  cursor: not-allowed;
+}
+@media only screen and (max-width: 800px) {
+  .sm-question-details {
+    padding: 2rem;
+  }
+
+  .sm-question {
+    width: 100%;
+  }
+
+  .sm-question-options {
+    width: 100%;
+  }
 }

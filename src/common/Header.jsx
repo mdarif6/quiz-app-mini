@@ -31,7 +31,7 @@ export default function Header() {
           ></i>
         ) : (
           <Link to="/login">
-            <i className="fa-solid fa-user"></i>
+            <button className="btn btn-primary">Login</button>
           </Link>
         )}
       </div>

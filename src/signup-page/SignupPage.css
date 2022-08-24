@@ -2,3 +2,7 @@
   position: relative;
   height: 100vh;
 }
+.disabled-btn {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

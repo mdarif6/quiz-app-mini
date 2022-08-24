@@ -3,11 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
 }
 .sm-rules-heading {
   font-weight: bold;
 }
 .unorderd-list li {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .sm-rule-content {
+    padding: 2.7rem;
+  }
 }

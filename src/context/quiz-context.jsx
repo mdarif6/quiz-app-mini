@@ -171,6 +171,9 @@ function quizReducer(state, action) {
 
       return { ...state, quizData1: quizData1Copy1 };
 
+    case "RESET":
+      return { ...state, quizData1: initialState.quizData1 };
+
     default:
       return state;
   }
