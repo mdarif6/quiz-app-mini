@@ -1,5 +1,5 @@
 .quiz-error-page {
-  margin: 4rem;
+  margin: 1rem auto;
   text-align: center;
 }
 .quiz-error-page img {
@@ -20,5 +20,8 @@
 @media only screen and (max-width: 800px) {
   .quiz-error-page img {
     max-width: 300px;
+  }
+  .quiz-error-page {
+    margin: 4rem auto;
   }
 }
