@@ -20,9 +20,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.sm-main {
-  padding: 3rem 0;
-}
+
 .sm-categories {
   padding: 2rem;
   display: flex;
@@ -61,9 +59,6 @@ body {
     max-width: 200px;
   }
   .sm-categories {
-    padding: 0;
-  }
-  .sm-main {
-    padding: 8.5rem 0;
+    padding: 2rem;
   }
 }

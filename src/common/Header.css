@@ -20,6 +20,7 @@
 .sm-logo img {
   width: 70px;
   height: 70px;
+  cursor: pointer;
 }
 .sm-header-icons i {
   font-size: 2rem;

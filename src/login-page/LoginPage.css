@@ -2,7 +2,7 @@
   max-width: 400px;
   border: 1px solid var(--quiz-black-color);
   border-radius: 5px;
-  margin: 2.22rem auto;
+  margin: 2rem auto;
 }
 .sm-login-container {
   padding: 1rem;
@@ -63,8 +63,5 @@
   }
   .sm-input-text label {
     width: 100%;
-  }
-  .sm-login-main {
-    margin: 2rem 0 3rem 0;
   }
 }

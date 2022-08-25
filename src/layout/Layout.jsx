@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "./header/Header";
-import Footer from "./footer/Footer";
+import Header from "../common/Header";
+import Footer from "../common/Footer";
+import "./Layout.css";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <div>
       <Header />
-
+      <div className="sm-mainlayout">{children}</div>
       <Footer />
     </div>
   );
